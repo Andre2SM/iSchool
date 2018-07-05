@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+        <title>Ubold - Responsive Admin Dashboard Template</title>
+
+        <!--Footable-->
+        <link href="plugins/footable/css/footable.core.css" rel="stylesheet">
+        <link href="plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                         <a href="index.html" class="logo"><i class=" icon-screen-desktop icon-c-logo"></i><span>IntraSchool</span></a>
+                        <!-- Image Logo here -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->
+                        <!--<span><img src="assets/images/logo_light.png" height="20"/></span>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item notification-list">
+                            <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                                <i class="dripicons-expand noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="text-overflow"><small>Bienvenido ! John</small> </h5>
+                                </div>
+
+                                <!-- item-->
+                                <a href="perfil.html" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-power"></i> <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+             <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                            <li class="text-muted menu-title">Opciones</li>
+
+                            <li class="has_sub">
+                                <a href="perfil.html" class="waves-effect"><i class="ti-user"></i> <span> Perfil </span></a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="cursos.html" class="waves-effect"><i class="ti-bookmark-alt"></i> <span> Cursos </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="horario.html" class="waves-effect"><i class="ti-calendar"></i><span> Horario </span> </a>
+                               
+                            </li>
+
+                            
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <!-- Page-Title -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card-box">
+                                    <h4 class="m-t-0 header-title">Horario</h4>
+                                    <p class="text-muted m-b-30 font-13">
+                                        Al dar Click a tus cursos observaras tu dia y hora del curso.
+                                    </p>
+
+                                    <label class="form-inline m-b-20">Show
+                                        <select id="demo-show-entries" class="form-control input-sm">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                        </select>
+                                        entries
+                                    </label>
+                                    <table id="demo-foo-pagination" class="table m-b-0 table-bordered toggle-arrow-tiny" data-page-size="5">
+                                        <thead>
+                                        <tr>
+                                            <th data-toggle="true">Curso </th>
+                                            <th>Docente </th>
+                                            <th data-hide="all"> Hora </th>
+                                            <th data-hide="all"> Día </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Redes2</td>
+                                            <td>Jose Mantilla</td>
+                                            <td>22 Jun 1972</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diseño Web</td>
+                                            <td>Hernan Robalino</td>
+                                            <td>3 Oct 1981</td>
+                                            <td>Disabled</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Arquitectura del Hardware</td>
+                                            <td>Armando Valencia</td>
+                                            <td>19 Apr 1969</td>
+                                            <td>Suspended</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Documentación del Sofware</td>
+                                            <td>Manuel Saenz</td>
+                                            <td>13 Dec 1977</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expresion Art&iacute;stica</td>
+                                            <td>Daniel Lisuratas</td>
+                                            <td>30 Dec 1991</td>
+                                            <td>Suspended</td>
+                                        </tr>
+                    
+                                        </tbody>
+                                        <tfoot>
+                                        <tr class="active">
+                                            <td colspan="5">
+                                                <div class="text-right">
+                                                    <ul class="pagination pagination-split justify-content-end footable-pagination m-t-10"></ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> <!-- container -->
+                         <div class="row">
+                            
+                            <div class="col-lg-6">
+                                <div class="card-box">
+                                    <h4 class="m-t-0 m-b-30 header-title"><b>Pie Chart</b></h4>
+
+                                    <div id="pie-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    &copy; 2018. JAIAS CORP - Todos los Derechos Reservados.
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <!--FooTable-->
+        <script src="plugins/footable/js/footable.all.min.js"></script>
+
+        <script src="plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+
+        <!--FooTable Example-->
+        <script src="assets/pages/jquery.footable.js"></script>
+        <script type="text/javascript" src="../plugins/d3/d3.min.js"></script>
+        <script type="text/javascript" src="../plugins/c3/c3.min.js"></script>
+        <script src="assets/pages/jquery.c3-chart.init.js"></script>
+
+    </body>
+</html>

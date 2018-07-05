@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+        <title>Ubold - Responsive Admin Dashboard Template</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+         <link href="../plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <style>
+            .text-center img{
+                vertical-align: top;
+            }
+
+            @media (max-width: 470px){
+              .form-horizontal .form-group{
+                width: 100%;
+              }  
+              .form-group label{
+                width: 100%;
+                flex: inherit;
+                max-width: inherit;
+              }  
+              .form-group .campos{
+                width: 100%;
+                flex: inherit;
+                max-width: inherit;
+
+            }  
+            }
+
+            
+        </style>
+
+
+    </head>
+
+
+
+    <!-- Begin page -->
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+               <div class="topbar-left">
+                    <div class="text-center">
+                      <img src="Logo_iSchool/logo-jaias_2.png" height="70" width="80">
+                        <a href="index.html" class="logo"><span>IntraSchool</span></a>
+                        <!-- Image Logo here -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->
+                        <!--<span><img src="assets/images/logo_light.png" height="20"/></span>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <nav class="navbar-custom">
+
+                     <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item notification-list">
+                            <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                                <i class="dripicons-expand noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="text-overflow"><small>Bienvenido ! John</small> </h5>
+                                </div>
+
+                                <!-- item-->
+                                <a href="perfil.html" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-power"></i> <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top-->
+
+
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                            <li class="text-muted menu-title">Opciones</li>
+
+                            <li class="has_sub">
+                                <a href="admin_index.html" class="waves-effect"><i class="ti-user"></i> <span> Perfil </span></a>
+                            </li>
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="ti-calendar"></i><span> Profesores </span> </a>
+                               <ul class="list-unstyled">
+                                    <li><a href="admin_prof.html">Lista Profesores</a></li>
+                                    <li><a href="regist_prof.html">Registrar Profesores</a></li>
+
+                                </ul>
+                            </li>
+                             <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="ti-calendar"></i><span> Estudiantes </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="admin_estu.html">Lista Estudiantes</a></li>
+                                    <li><a href="regist_estu.html">Registrar Estudiantes</a></li>
+
+                                </ul>
+                            </li>                               
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+            <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-box">
+                                        <div class="row">
+                                        <div class="col-12">
+                                            <div class="p-20">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Nombre</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="nombre" class="form-control" placeholder="Ingrese los nombres">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Apellido Paterno</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="a_paterno" class="form-control" placeholder="Ingrese el Apellido Paterno">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Apellido Materno</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="a_materno" class="form-control" placeholder="Ingrese el Apellido Materno">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">DNI</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="document" class="form-control" placeholder="Documento">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label" for="sexo">Sexo</label>
+                                                        <div class="col-10 campos">
+                                                            <select class="form-control" id="sexo" data-style="btn-white" name="sexo">
+                                                                <option>-</option>
+                                                                <option value="Masculino">Masculino</option>
+                                                                <option value="Femenino">Femenino</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Fecha de Nacimiento</label>
+                                                        <div class="col-10 campos">
+                                                            <input class="form-control" type="date" name="fecha_nacimiento">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label" for="example-email">Email</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="email" id="example-email" name="email" class="form-control" placeholder="Email del Apoderador">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label" for="nivel">Nivel</label>
+                                                        <div class="col-10 campos">
+                                                            <select class="form-control" id="nivel" data-style="btn-white" name="nivel">
+                                                                <option>-</option>
+                                                                <option value="primaria">Primaria</option>
+                                                                <option value="secundaria">Secundaria</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label" for="nivel">Grado que Accede</label>
+                                                        <div class="col-10 campos">
+                                                            <select class="form-control" data-style="btn-white" name="grado">
+                                                                <option>-</option>
+                                                                <option value="primero">Primero</option>
+                                                                <option value="segundo">Segundo</option>
+                                                                <option value="tercero">Tercero</option>
+                                                                <option value="cuarto">Cuarto</option>
+                                                                <option value="quinto">Quinto</option>
+                                                                <option value="sexto" id="condition">Sexto</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Sección</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="seccion" class="form-control" placeholder="Sección">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <label class="col-2 col-form-label">Aula</label>
+                                                        <div class="col-10 campos">
+                                                            <input type="text" name="aula" class="form-control" placeholder="Aula">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group text-right m-b-0">
+                                                        <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                                            Editar
+                                                        </button>
+                                                        <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                                            Cancelar
+                                                        </button>
+                                                    </div>
+
+
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                    
+                                    <!-- end row -->
+
+                                </div> <!-- end card-box -->
+                            </div><!-- end col -->
+                        </div>
+                  </div>
+              </div>
+             </div> 
+
+                <footer class="footer text-right">
+                    &copy; 2018. JAIAS CORP - Todos los Derechos Reservados.
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+
+        
+        <!-- END wrapper -->
+
+
+
+         <script>
+            var resizefunc = [];
+        </script>
+        
+                <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+                <script src="plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script>
+            $(function(){
+                $('#nivel').change(function(){
+                    $("#nivel option:selected").each(function(){
+                        var nivel = $(this).val();
+                        if(nivel=='secundaria'){
+                            $('#condition').css('display','none');
+                        }else{
+                            $('#condition').css('display','block');
+                        }
+
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+        <title>Ubold - Responsive Admin Dashboard Template</title>
+
+        <link href="plugins/responsive-table/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <style>
+            .card-box{
+                margin: 5px auto;
+                overflow-x: auto;
+            }
+
+            .thumb{
+                width: 45%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .description{
+                margin: 30px 10px 0 10px;
+                vertical-align: top;
+                box-sizing: border-box;
+                padding: 30px 20px;
+                display: inline-block;
+                width: 50%;
+                background-color: #ffffff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            .row{
+                margin-bottom: 30px;
+            }
+
+            td{
+                text-align: center;
+            }
+
+
+            @media(max-width: 1000px){
+                .thumb{
+                  width: 100%;  
+                }
+                
+                .description{
+                    width: 100%;
+                    margin: 30px 0 0 0;
+                }
+            }
+        </style>
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                         <a href="index.html" class="logo"><i class=" icon-screen-desktop icon-c-logo"></i><span>IntraSchool</span></a>
+                        <!-- Image Logo here -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->
+                        <!--<span><img src="assets/images/logo_light.png" height="20"/></span>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item notification-list">
+                            <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                                <i class="dripicons-expand noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="text-overflow"><small>Bienvenido ! John</small> </h5>
+                                </div>
+
+                                <!-- item-->
+                                <a href="perfil.html" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-power"></i> <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+             <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                            <li class="text-muted menu-title">Opciones</li>
+
+                            <li class="has_sub">
+                                <a href="perfil.html" class="waves-effect"><i class="ti-user"></i> <span> Perfil </span></a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="cursos.html" class="waves-effect"><i class="ti-bookmark-alt"></i> <span> Cursos </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="horario.html" class="waves-effect"><i class="ti-calendar"></i><span> Horario </span> </a>
+                               
+                            </li>
+
+                            
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="gal-detail thumb">
+                                <a href="assets/images/gallery/1.jpg" class="image-popup" title="Screenshot-1">
+                                            <img src="assets/images/gallery/1.jpg" class="thumb-img" alt="work-thumbnail">
+                                </a>
+                                <h4 class="font-18" id="name_curso">Nombre del Curso</h4>
+                            </div>
+                            <div class="description">
+                                El párrafo es la exposición coherente y por escrito de una idea completa. Es unidad de pensamiento y sentimiento, forma la unidad de expresión en el lenguaje escrito. Dicha unidad está integrada por dos elementos: el enunciado principal y los enunciados secundarios, los cuales complementan al principal.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card-box">
+                                <div class="table-rep-plugin">
+                                  <div class="table-responsive" data-pattern="priority-columns">
+                                            <table id="tech-companies-1" class="table  table-striped">
+                                                <thead>
+                                        <tr>
+                                            <th data-tablesaw-priority="persist"> Trimestre</th>
+                                            <th data-tablesaw-priority="2">Examen Parcial</th>
+                                            <th data-tablesaw-priority="2">Examen Final</th>
+                                            <th data-tablesaw-priority="2">Promedio</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Primer</td>
+                                            <td>15</td>
+                                            <td>20</td>
+                                            <td>16</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Segundo</td>
+                                            <td>15</td>
+                                            <td>20</td>
+                                            <td>16</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Tercer</td>
+                                            <td>15</td>
+                                            <td>20</td>
+                                            <td>16</td>
+                                        </tr>
+
+                                        </tbody>
+                                            </table>
+                                        </div>  
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                </div>
+            </div>
+
+                <footer class="footer text-right">
+                    &copy; 2018. All rights reserved.
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- responsive-table-->
+        <script src="plugins/responsive-table/js/rwd-table.min.js" type="text/javascript"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script>
+            $(function(){
+                function getParameter(variable){
+                    var query = window.location.search.substring(1);
+                    var vars = query.split("&");
+                    for(var i=0; i<vars.length;i++){
+                        var pair = vars[i].split("=");
+                        if(pair[0] == variable){
+                            return pair[1];
+                        }
+                    }
+                };
+
+                var codigo = getParameter("cod_curso");
+                console.log(codigo);
+
+                $("#name_curso").html(codigo);
+
+            });
+        </script>
+    </body>
+</html>
